@@ -1,0 +1,30 @@
+.card-body-stars {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+}
+
+.card-body-stars li:nth-child(1) {
+  transition-delay: 0s;
+}
+.card-body-stars li:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.card-body-stars li:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.card-body-stars li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+.card-body-stars li:nth-child(5) {
+  transition-delay: 0.35s;
+}
+
+.card-body-stars:hover li {
+  transform: translateY(-5px);
+}
+
+.card-body-stars li {
+  transition: transform 0.3s ease;
+}

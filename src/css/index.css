@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #d3bca2;
+  --background-color: #f5f6fa;
+  --text-color: #2d3436;
+  --accent-color: #f1c40f;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
